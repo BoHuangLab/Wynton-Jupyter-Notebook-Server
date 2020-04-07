@@ -59,10 +59,30 @@ UCSF has Python 2 and 3 installed, and *very little else* You will need to insta
 
 "pip3 install --user numpy scipy matplotlib pandas scikit-learn"
 
-##Install Jupyter Notebooks
-Now we're at the meat and potatoes of this long endeavor. You will be installing jupyter notebooks and configuring it to run as a server which you can access remotely. Instructions are here [[https://jupyter-notebook.readthedocs.io/en/stable/public_server.html]]
+## Install Jupyter Notebooks
+Now we're at the meat and potatoes of this long endeavor. You will be installing jupyter notebooks and configuring it to run as a server which you can access remotely. 
 
-Enter "pip3 install --user jupyter"
+Enter `pip3 install --user jupyter`
 
-Now we will access the jupyter config file.
+I have included a config file which you can use. You may configure your own if there are other options you'd like to set by following the instructions here. Download the file and enter this command to upload it to the right folder.
+
+`scp "CONFIG FILE LOCATION" USERNAME@log2.wynton.ucsf.edu:"~/.jupyter"`
+
+Instructions are here [[https://jupyter-notebook.readthedocs.io/en/stable/public_server.html]]
+
+## Accessing the notebook server ##
+
+Here's the moment you've all been waiting for. We will now initiate the notebook instance and access the server from our local machines. This is done by connection ports between your machine and the login node, and then the login node with the development node. You will need to do this every time you intend on accessing the notebook. It is fairly simple to write a script to automate this. I've attached one for Mac in the git, which you'll need to update with your own credentials. First decide on a port number. In the AppleScript I've attached, it generates a 4 digit number randomly. Try to avoid common ones like "8888" and "8880." Open a fresh terminal window and type:
+
+`ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@log2.wynton.ucsf.edu;`
+`ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@gNODE NAME`
+`ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE NAME`
+`jupyter notebook --port=PORT`
+
+Now just open your browser and type in `localhost:PORT` and you should be good to go. The first time you access it, you will be asked to generate a password to access the notebook. The key can be found in the terminal window, as seen below:
+
+
+From here, you can upload files via the GUI.
+
+
 
