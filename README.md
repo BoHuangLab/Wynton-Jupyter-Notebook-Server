@@ -89,16 +89,18 @@ Fulll instructions to set up a jupyter notebook server can be found [here] (http
 
 Here's the moment you've all been waiting for. We will now initiate the notebook instance and access the server from our local machines. This is done by connection ports between your machine and the login node, and then the login node with the development node. __You will need to do this every time you intend on accessing the notebook.__ It is fairly simple to write a script to automate this. I've attached an applescript for Mac in the git, which you'll need to update with your own credentials. 
 
-First decide on a port number. In the AppleScript I've attached, it generates a 4 digit number randomly. Try to avoid common ones like "8888" and "8880." Open a fresh terminal window and type:
+First decide on a port number. In the AppleScript I've attached, it generates a 4 digit number randomly. Try to avoid common ones like `8888` and `8880`. Open a fresh terminal window and type:
 
-`ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@log2.wynton.ucsf.edu;`
-`ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@gNODE_NAME`
-`ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME`
-`jupyter notebook --port=PORT`
+```
+ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@log2.wynton.ucsf.edu;
+ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@gNODE_NAME
+ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME
+jupyter notebook --port=PORT
+```
 
 Now just open your browser and type in `localhost:PORT` and you should be good to go.  
 
-[The first time you access it, you will be asked to generate a password to access the notebook.](/Images/Jupyter First Launch.jpg?raw=true "Title")
+[The first time you access it, you will be asked to generate a password to access the notebook.]("/Images/Jupyter First Launch.jpg?raw=true "Title")
 
 The key can be found in the terminal window, as seen below:
 
