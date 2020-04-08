@@ -25,11 +25,11 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
 
 1. __From Local Machine:__  Enter `ssh-keygen -t rsa`
 2. *`Enter file in which to save the key`*
-  - Press "ENTER" (Leave Default)
+  - Press `ENTER` (Leave Default)
 3. *`Enter passphrase`* 
-  - Press `"ENTER"` (Leave Default)
+  - Press `ENTER` (Leave Default)
 4. *`Enter passphrase again`* 
- - Press `"ENTER"` (Leave Default)
+ - Press `ENTER` (Leave Default)
 5. __MacOS:__
    ```
    curl https://raw.github.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o \n
@@ -41,7 +41,7 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
    ```
    cat ~/.ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu "cat >> ~/.ssh/authorized_keys"
    ```
-  - If applicable: *`Are you sure you want to continue connecting? (yes/no)`* Type Yes
+  - If applicable: *`Are you sure you want to continue connecting? (yes/no)`* Type `yes`
   - Enter password when prompted
 
 This allows us to access the login node without being prompted for a password. 
@@ -51,13 +51,13 @@ Access a node by entering `ssh NODE_NAME` after logging into the node. If you lo
 If you are prompted for a password, you will need to repeat the process, this time pairing the login node to the dev:
 
 1. `ssh USERNAME@log2.wynton.ucsf.edu`
-2. Enter `ssh-keygen -t rsa`
+2. `ssh-keygen -t rsa`
 3. *`Enter file in which to save the key`*
-  - Press "ENTER" (Leave Default)
+  - Press `ENTER` (Leave Default)
 4. *`Enter passphrase`* 
-  - Press `"ENTER"` (Leave Default)
+  - Press `ENTER` (Leave Default)
 5. *`Enter passphrase again`* 
-  - Press `"ENTER"` (Leave Default)
+  - Press `ENTER` (Leave Default)
 6. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@NODE_NAME`
   - Enter password when prompted
 
@@ -74,7 +74,7 @@ Login with
 ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'
 ```
 
-### Update PIP
+### Update pip
 
 In the development node, enter:
 ```
@@ -98,7 +98,7 @@ In the development node, enter:
 pip3 install --user jupyter
 ```
 
-I have included a config file which you can use. Download or clone this repo and enter this command to upload `jupyter_notebook_config`.
+I have included a config file which you can use. Download or clone this repo and enter the following command to upload `jupyter_notebook_config`.
 
 __From local machine (Type `exit` in Terminal):__ 
 ```
