@@ -49,7 +49,7 @@ If you are prompted for a password, you will need to repeat the process, this ti
   - Press `"ENTER"` (Leave Default)
 5. *`Enter passphrase again`* 
   - Press `"ENTER"` (Leave Default)
-6. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@NODENAME`
+6. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@NODE_NAME`
   - Enter password when prompted
 
 Make sure the terminal window says `[USERNAME@wynlog2 ~]` during this set of steps. It is possible that you get logged out. Remember, we are creating that password pairing between your account's login node  and the development node.
