@@ -120,9 +120,9 @@ ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'
 jupyter notebook --port=PORT
 ```
 
-Now just open your browser and type in `localhost:PORT` and you should be good to go.
+Now just open your browser and type `localhost:PORT` in the address bar to access the notebook server.
 
-__You will need to do this every time you intend on accessing the notebook.__ It is fairly simple to write a script to automate this. I've attached a launchable applescript for Mac in the git, which you'll need to modify with your own credentials. 
+__You will need to do this every time you intend on accessing the notebook.__ It is fairly simple to write a script to automate this. I've attached a launchable applescript for Mac in the git which you'll need to modify with your own credentials. 
 
 The first time you access it, you will be asked to generate a password to access the notebook.
 
