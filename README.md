@@ -108,6 +108,6 @@ The first time you access it, you will be asked to generate a password to access
 ![Screenshot]("/Images/Jupyter First Launch.jpg")
 
 The key can be found in the terminal window, as seen below:
-![Screenshot]("/Images/Terminal View.jpg")
+![Screenshot](/Images/Terminal View.jpg)
 
 From here, you can upload files via the GUI.
