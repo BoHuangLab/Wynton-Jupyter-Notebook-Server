@@ -107,8 +107,7 @@ Now just open your browser and type in `localhost:PORT` and you should be good t
 The first time you access it, you will be asked to generate a password to access the notebook.
 
 
-<img src="image" width="40%">
-![Screenshot](https://raw.githubusercontent.com/EmaadKhwaja/Jupyter-Notebook-Wynton/master/Images/Jupyter%20First%20Launch.jpg?token=AKDNQTYM4LT6TLDNRAZ6CPS6RUQRM =100x)
+<img src="https://raw.githubusercontent.com/EmaadKhwaja/Jupyter-Notebook-Wynton/master/Images/Jupyter%20First%20Launch.jpg?token=AKDNQTYM4LT6TLDNRAZ6CPS6RUQRM" width="40%">
 
 The key can be found in the terminal window, as seen below:
 ![Screenshot](https://raw.githubusercontent.com/EmaadKhwaja/Jupyter-Notebook-Wynton/master/Images/Terminal%20View.jpg?token=AKDNQT2VP4FBLTL7ITXJWNS6RUQUU =100x)
