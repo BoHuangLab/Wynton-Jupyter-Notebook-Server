@@ -91,7 +91,7 @@ Fulll instructions to set up a jupyter notebook server can be found [here](https
 
 ## Accessing the notebook server
 
-Here's the moment you've all been waiting for. We will now initiate the notebook instance and access the server from our local machines. This is done by connection ports between your machine and the login node, and then the login node with the development node. __You will need to do this every time you intend on accessing the notebook.__ It is fairly simple to write a script to automate this. I've attached an applescript for Mac in the git, which you'll need to update with your own credentials. 
+Here's the moment you've all been waiting for. We will now initiate the notebook instance and access the server from our local machines. This is done by connection ports between your machine and the login node, and then the login node with the development node.
 
 First decide on a port number. In the AppleScript I've attached, it generates a 4 digit number randomly. Try to avoid common ones like `8888` and `8880`. Open a fresh terminal window and type:
 
@@ -102,7 +102,9 @@ ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME
 jupyter notebook --port=PORT
 ```
 
-Now just open your browser and type in `localhost:PORT` and you should be good to go.  
+Now just open your browser and type in `localhost:PORT` and you should be good to go.
+
+__You will need to do this every time you intend on accessing the notebook.__ It is fairly simple to write a script to automate this. I've attached a launchable applescript for Mac in the git, which you'll need to modify with your own credentials. 
 
 The first time you access it, you will be asked to generate a password to access the notebook.
 
