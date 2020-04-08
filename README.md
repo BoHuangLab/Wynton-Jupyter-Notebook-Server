@@ -1,4 +1,4 @@
-# Jupyter-Notebook-Wynton
+# Running a remote Jupter Notebook Server on Wynton HPC
 Instructions on running a jupyter notebook instance on UCSF Wynton High Performance Compute Cluster. Since wynton access utilizes SSH access, familiarize yourself on using SSH. On Mac/Linux, this can easily be access via terminal. [On PC, this requires some extra steps](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/).
 
 ## Wyton Access
