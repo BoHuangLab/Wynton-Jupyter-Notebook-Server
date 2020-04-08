@@ -47,7 +47,7 @@ This allows us to access the login node without being prompted for a password. A
 6. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@NODENAME`
   - Enter password when prompted
 
-Make sure the terminal window says `[USERNAME@log2.wynton.ucsf.edu]` during this set of steps. It is possible that you get logged out. Remember, we are creating that password pairing between your account's login node  and the development node.
+Make sure the terminal window says `[USERNAME@wynlog2 ~]` during this set of steps. It is possible that you get logged out. Remember, we are creating that password pairing between your account's login node  and the development node.
 
 ## Setting up Jupyter Notebook Server
 
