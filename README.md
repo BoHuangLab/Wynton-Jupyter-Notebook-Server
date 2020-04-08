@@ -35,7 +35,11 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
   - If applicable: *`Are you sure you want to continue connecting? (yes/no)`* Type Yes
   - Enter password when prompted
 
-This allows us to access the login node without being prompted for a password. Access a node by entering `ssh NODE_NAME` after logging into the node. If you log in, skip to the "Setting up Jupyter Notebook Server" section. If you are prompted for a password, you will need to repeat the process, this time pairing the node machine to the dev.:
+This allows us to access the login node without being prompted for a password. 
+
+Access a node by entering `ssh NODE_NAME` after logging into the node. If you log in, skip to the __Setting up Jupyter Notebook Server__ section. 
+
+If you are prompted for a password, you will need to repeat the process, this time pairing the login node to the dev:
 
 1. `ssh USERNAME@log2.wynton.ucsf.edu`
 2. Enter `ssh-keygen -t rsa`
