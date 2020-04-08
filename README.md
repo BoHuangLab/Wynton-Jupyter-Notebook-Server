@@ -10,10 +10,10 @@ I will be using `log2.wynton.ucsf.edu` as the main access point for this noteboo
 
 e.g. the commands could be entered in the order of:
 
-1. `ssh USERNAME@log2.wynton.ucsf.edu`
-  - *`Are you sure you want to continue connecting? (yes/no)`* Type Yes
-2. `*ENTER PASSWORD*`
-3. `ssh NODE_NAME`
+```
+ssh USERNAME@log2.wynton.ucsf.edu
+ssh NODE_NAME
+```
 
 Node names and specs can be found [here](https://wynton.ucsf.edu/hpc/about/specs.html). 
 
@@ -32,6 +32,7 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
  - Press `"ENTER"` (Leave Default)
 5. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@log2.wynton.ucsf.edu`
   - * On a Mac, `ssh-copy-id` is not installed by default. If this command fails enter, `curl https://raw.github.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o /usr/local/bin/ssh-copy-id`and then try the previous command again.
+  - If applicable: *`Are you sure you want to continue connecting? (yes/no)`* Type Yes
   - Enter password when prompted
 
 This allows us to access the login node without being prompted for a password. Access a node by entering `ssh NODE_NAME` after logging into the node. If you log in, skip to the "Setting up Jupyter Notebook Server" section. If you are prompted for a password, you will need to repeat the process, this time pairing the node machine to the dev.:
