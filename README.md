@@ -11,7 +11,7 @@ I will be using `log2.wynton.ucsf.edu` as the main access point for this noteboo
 e.g. the commands could be entered in the order of:
 
 1. `ssh USERNAME@log2.wynton.ucsf.edu`
-  - `*Are you sure you want to continue connecting? (yes/no)*` Type Yes
+  - *`Are you sure you want to continue connecting? (yes/no)`* Type Yes
 2. `*ENTER PASSWORD*`
 3. `ssh NODE_NAME`
 
