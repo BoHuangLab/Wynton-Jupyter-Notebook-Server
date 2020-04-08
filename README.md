@@ -1,7 +1,7 @@
 # Running a remote Jupter Notebook Server on Wynton HPC
 Instructions on running a jupyter notebook instance on UCSF Wynton High Performance Compute Cluster. Since wynton access utilizes SSH access, familiarize yourself on using SSH. On Mac/Linux, this can easily be access via terminal. This is enabled by default on newer versions of Windows 10. [Some older versions require extra steps](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/).
 
-## Wyton Access
+## Wynton Access
 You will need to first obtain access to the UCSF Wynton server. This can be done [here](https://wynton.ucsf.edu/hpc/about/join.html).
 
 After obtaining access, use the [procedure to log in](https://wynton.ucsf.edu/hpc/get-started/access-cluster.html). This is done through SSH. In Mac/Linux, SSH is accessed via `Terminal`. In Windows, you're going to want to use `Powershell`.
