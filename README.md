@@ -10,7 +10,7 @@ I will be using `log2.wynton.ucsf.edu` as the main access point for this noteboo
 
 e.g. the commands could be entered in the order of:
 
-```zsh
+```shell
 ssh USERNAME@log2.wynton.ucsf.edu
 ssh NODE_NAME
 ```
@@ -31,14 +31,14 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
 4. *`Enter passphrase again`* 
  - Press `ENTER` (Leave Default)
 5. __MacOS:__
-   ```
+   ```shell
    curl https://raw.github.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o \n
    /usr/local/bin/ssh-copy-id
    
    ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@log2.wynton.ucsf.edu
    ```
    __Windows:__
-   ```
+   ```shell
    cat ~/.ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu "cat >> ~/.ssh/authorized_keys"
    ```
   - If applicable: *`Are you sure you want to continue connecting? (yes/no)`* Type `yes`
@@ -70,14 +70,14 @@ Make sure the terminal window says `[USERNAME@wynlog2 ~]` during this set of ste
 Now that we have the password pairings established, we can finally begin to install our python packages. The python installation is barebones so we need to install __EVERY__ package we desire manually.
 
 Login with 
-```
+```shell
 ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'
 ```
 
 ### Update pip
 
 In the development node, enter:
-```
+```shell
 pip install --user --upgrade pip
 pip3 install --user --upgrade pip
 ```
@@ -86,7 +86,7 @@ pip3 install --user --upgrade pip
 UCSF has Python 2 and 3 installed, and *very little else.* You will need to install any package you intend on using via pip3 install --user PACKAGE NAME" You can copy and paste the snippit below for the essentials. I will be doing these installations on Python 3, but if you would like to use Python 2.x, simply use pip instead of pip3.
 
 In the development node, enter: 
-```
+```shell
 pip3 install --user numpy scipy matplotlib pandas scikit-learn
 ```
 
@@ -94,14 +94,14 @@ pip3 install --user numpy scipy matplotlib pandas scikit-learn
 Now we're at the meat and potatoes of this long endeavor. You will be installing jupyter notebooks and configuring it to run as a server which you can access remotely. 
 
 In the development node, enter: 
-```
+```shell
 pip3 install --user jupyter
 ```
 
 I have included a config file which you can use. Download or clone this repo and enter the following command to upload `jupyter_notebook_config`.
 
 __From local machine (Type `exit` in Terminal):__ 
-```
+```shell
 scp CONFIG_FILE_LOCATION USERNAME@log2.wynton.ucsf.edu:"~/.jupyter"
 ```
 
@@ -113,7 +113,7 @@ Here's the moment you've all been waiting for. We will now initiate the notebook
 
 First decide on a port number. In the AppleScript I've attached, it generates a 4 digit number randomly. Try to avoid common ones like `8888` and `8880`. Open a fresh terminal window and type:
 
-```
+```shell
 ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@log2.wynton.ucsf.edu;
 ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@NODE_NAME';
 ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'
