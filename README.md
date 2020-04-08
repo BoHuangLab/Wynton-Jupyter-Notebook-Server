@@ -32,7 +32,9 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
  - Press `"ENTER"` (Leave Default)
 5. __MacOS:__
    ```
-   curl https://raw.github.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o /usr/local/bin/ssh-copy-id
+   curl https://raw.github.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o \n
+   /usr/local/bin/ssh-copy-id
+   
    ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@log2.wynton.ucsf.edu
    ```
    __Windows:__
