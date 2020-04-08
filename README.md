@@ -69,7 +69,10 @@ Make sure the terminal window says `[USERNAME@wynlog2 ~]` during this set of ste
 
 Now that we have the password pairings established, we can finally begin to install our python packages. The python installation is barebones so we need to install __EVERY__ package we desire manually.
 
-Login with `ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'`
+Login with 
+```
+ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'
+```
 
 ### Update PIP
 
@@ -82,12 +85,18 @@ pip3 install --user --upgrade pip
 ### Install your favorite packages
 UCSF has Python 2 and 3 installed, and *very little else.* You will need to install any package you intend on using via pip3 install --user PACKAGE NAME" You can copy and paste the snippit below for the essentials. I will be doing these installations on Python 3, but if you would like to use Python 2.x, simply use pip instead of pip3.
 
-In the development node, enter: `pip3 install --user numpy scipy matplotlib pandas scikit-learn`
+In the development node, enter: 
+```
+pip3 install --user numpy scipy matplotlib pandas scikit-learn
+```
 
 ### Install Jupyter Notebooks
 Now we're at the meat and potatoes of this long endeavor. You will be installing jupyter notebooks and configuring it to run as a server which you can access remotely. 
 
-In the development node, enter: `pip3 install --user jupyter`
+In the development node, enter: 
+```
+pip3 install --user jupyter
+```
 
 I have included a config file which you can use. Download or clone this repo and enter this command to upload `jupyter_notebook_config`.
 
