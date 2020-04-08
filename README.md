@@ -21,7 +21,7 @@ Node names and specs can be found [here](https://wynton.ucsf.edu/hpc/about/specs
 
 
 ### SSH Configuration
-Storing a public-private ssh key pair will save a lot of headaches in the future. What this allows us to do is to login to the server without having to enter a password. This is especially useful because accessing the development nodes requires you to enter your password twice. Instructions are pulled from [here] (https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/).
+Storing a public-private ssh key pair will save a lot of headaches in the future. What this allows us to do is to login to the server without having to enter a password. This is especially useful because accessing the development nodes requires you to enter your password twice. Instructions are pulled from [here](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/).
 
 1. Open ssh terminal 
 2. Enter `ssh-keygen -t rsa`
@@ -87,7 +87,7 @@ I have included a config file which you can use. You may configure your own if t
 
 `scp` *`CONFIG_FILE_LOCATION`* `USERNAME@log2.wynton.ucsf.edu:"~/.jupyter"`
 
-Fulll instructions to set up a jupyter notebook server can be found [here] (https://jupyter-notebook.readthedocs.io/en/stable/public_server.html).
+Fulll instructions to set up a jupyter notebook server can be found [here](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html).
 
 ## Accessing the notebook server
 
@@ -105,9 +105,9 @@ jupyter notebook --port=PORT
 Now just open your browser and type in `localhost:PORT` and you should be good to go.  
 
 The first time you access it, you will be asked to generate a password to access the notebook.
-[Screenshot]("/Images/Jupyter First Launch.jpg")
+![Screenshot]("/Images/Jupyter First Launch.jpg")
 
 The key can be found in the terminal window, as seen below:
-[Screenshot]("/Images/Terminal View.jpg")
+![Screenshot]("/Images/Terminal View.jpg")
 
 From here, you can upload files via the GUI.
