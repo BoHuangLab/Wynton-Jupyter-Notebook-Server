@@ -55,7 +55,7 @@ This allows us to access the login node without being prompted for a password. _
 7. `ssh USERNAME@log2.wynton.ucsf.edu "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"`
   - Enter password when prompted
 
-Make sure the terminal window says "[username@log2.wynton.ucsf.edu]" during this set of steps. It is possible that you get logged out. Remember, we are creating that password pairing between your account's login node  and the development node.
+Make sure the terminal window says `[USERNAME@log2.wynton.ucsf.edu]` during this set of steps. It is possible that you get logged out. Remember, we are creating that password pairing between your account's login node  and the development node.
 
 ## Setting up Jupyter Notebook Server
 
