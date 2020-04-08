@@ -23,7 +23,7 @@ Node names and specs can be found [here](https://wynton.ucsf.edu/hpc/about/specs
 ### SSH Configuration
 Storing a public-private ssh key pair will save a lot of headaches in the future. What this allows us to do is to login to the server without having to enter a password. This is especially useful because accessing the development nodes requires you to enter your password twice. Instructions are pulled from [here](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/).
 
-1. __From Local Machine:__  Enter `ssh-keygen -t rsa`
+1. __From Local Machine:__ `ssh-keygen -t rsa`
 2. *`Enter file in which to save the key`*
   - Press `ENTER` (Leave Default)
 3. *`Enter passphrase`* 
