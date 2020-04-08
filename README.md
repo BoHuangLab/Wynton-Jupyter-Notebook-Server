@@ -1,10 +1,10 @@
 # Jupyter-Notebook-Wynton
-Instructions on running a jupyter notebook instance on UCSF Wynton Supercompute Cluster. Since wynton access utilizes SSH access, familiarize yourself on using SSH. On Mac/Linux, this can easily be access via terminal. [On PC, this requires some extra steps.] (https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
+Instructions on running a jupyter notebook instance on UCSF Wynton Supercompute Cluster. Since wynton access utilizes SSH access, familiarize yourself on using SSH. On Mac/Linux, this can easily be access via terminal. [On PC, this requires some extra steps](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/).
 
 ## Wyton Access
-You will need to first obtain access to the UCSF Wynton server. This can be done [here.] (https://wynton.ucsf.edu/hpc/about/join.html)
+You will need to first obtain access to the UCSF Wynton server. This can be done [here](https://wynton.ucsf.edu/hpc/about/join.html).
 
-After obtaining access, use the [procedure to log in] (https://wynton.ucsf.edu/hpc/get-started/access-cluster.html). 
+After obtaining access, use the [procedure to log in](https://wynton.ucsf.edu/hpc/get-started/access-cluster.html). 
 
 I will be using `log2.wynton.ucsf.edu` as the main access point for this notebook. You'll generally have access to more powerful hardware on the development nodes. The way these are accessed is by entering `ssh NODE_NAME` only after successfully accessing the login node. 
 
@@ -15,7 +15,9 @@ e.g. the commands could be entered in the order of:
 3. `ssh NODE_NAME`
 4. *ENTER PASSWORD*
 
-Node names and specs can be found [here] (https://wynton.ucsf.edu/hpc/about/specs.html). Nodes are selected based on hardware needs. General coding will benefit from the Xeon E5430 CPU found on "dev1", but using large datasets will probably require `dev2` or `dev3` which have larger "/scratch" designation. Deep learning (and other GPU-dependent tasks) should be done on `gpudev1`
+Node names and specs can be found [here](https://wynton.ucsf.edu/hpc/about/specs.html). 
+
+*Nodes are selected based on hardware needs. General coding will benefit from the Xeon E5430 CPU found on `dev1`, but using large datasets will probably require `dev2` or `dev3` which have larger `/scratch` designation. Deep learning (and other GPU-dependent tasks) should be done on `gpudev1`*
 
 
 ### SSH Configuration
@@ -83,7 +85,7 @@ In the development node, enter: `pip3 install --user jupyter`
 
 I have included a config file which you can use. You may configure your own if there are other options you'd like to set by following the instructions here. Download the file and enter this command to upload it to the right folder.
 
-`scp` *`CONFIG_FILE_LOCATION`* *`USERNAME@log2.wynton.ucsf.edu:"~/.jupyter"`
+`scp` *`CONFIG_FILE_LOCATION`* `USERNAME@log2.wynton.ucsf.edu:"~/.jupyter"`
 
 Fulll instructions to set up a jupyter notebook server can be found [here] (https://jupyter-notebook.readthedocs.io/en/stable/public_server.html).
 
@@ -106,5 +108,6 @@ The first time you access it, you will be asked to generate a password to access
 [Screenshot]("/Images/Jupyter First Launch.jpg")
 
 The key can be found in the terminal window, as seen below:
+[Screenshot]("/Images/Terminal View.jpg")
 
 From here, you can upload files via the GUI.
