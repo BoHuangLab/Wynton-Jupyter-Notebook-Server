@@ -41,8 +41,6 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
    ```
    cat ~/.ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu "cat >> ~/.ssh/authorized_keys"
    ```
- 6.
-
   - If applicable: *`Are you sure you want to continue connecting? (yes/no)`* Type Yes
   - Enter password when prompted
 
