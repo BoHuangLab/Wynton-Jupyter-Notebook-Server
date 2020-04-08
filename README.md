@@ -1,5 +1,5 @@
 # Jupyter-Notebook-Wynton
-Instructions on running a jupyter notebook instance on UCSF Wynton Supercompute Cluster. Since wynton access utilizes SSH access, familiarize yourself on using SSH. On Mac/Linux, this can easily be access via terminal. [On PC, this requires some extra steps](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/).
+Instructions on running a jupyter notebook instance on UCSF Wynton High Performance Compute Cluster. Since wynton access utilizes SSH access, familiarize yourself on using SSH. On Mac/Linux, this can easily be access via terminal. [On PC, this requires some extra steps](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/).
 
 ## Wyton Access
 You will need to first obtain access to the UCSF Wynton server. This can be done [here](https://wynton.ucsf.edu/hpc/about/join.html).
@@ -17,7 +17,7 @@ e.g. the commands could be entered in the order of:
 
 Node names and specs can be found [here](https://wynton.ucsf.edu/hpc/about/specs.html). 
 
-*Nodes are selected based on hardware needs. General coding will benefit from the Xeon E5430 CPU found on `dev1`, but using large datasets will probably require `dev2` or `dev3` which have larger `/scratch` designation. Deep learning (and other GPU-dependent tasks) should be done on `gpudev1`*
+*Nodes are selected based on hardware needs. General coding will benefit from the Xeon E5430 CPU found on `dev1`, but using large datasets will probably require `dev2` or `dev3` which have larger `/scratch` designation. __Deep learning (and other GPU-dependent tasks) should be done on `gpudev1`.__*
 
 
 ### SSH Configuration
