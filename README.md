@@ -90,8 +90,8 @@ First decide on a port number. In the AppleScript I've attached, it generates a 
 
 ```
 ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@log2.wynton.ucsf.edu;
-ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@gNODE_NAME
-ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME
+ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh -N -f -L localhost:PORT:localhost:PORT USERNAME@NODE_NAME'
+ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'
 jupyter notebook --port=PORT
 ```
 
