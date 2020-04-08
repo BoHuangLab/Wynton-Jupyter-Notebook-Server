@@ -30,8 +30,15 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
   - Press `"ENTER"` (Leave Default)
 4. *`Enter passphrase again`* 
  - Press `"ENTER"` (Leave Default)
-5. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@log2.wynton.ucsf.edu`
-  - * On a Mac, `ssh-copy-id` is not installed by default. If this command fails enter, `curl https://raw.github.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o /usr/local/bin/ssh-copy-id`and then try the previous command again.
+5. __MacOS:__
+   ```
+   curl https://raw.github.com/beautifulcode/ssh-copy-id-for-OSX/master/ssh-copy-id.sh -o /usr/local/bin/ssh-copy-id
+   ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@log2.wynton.ucsf.edu
+   ```
+   __Windows:__
+   `cat ~/.ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu "cat >> ~/.ssh/authorized_keys"`
+ 6.
+
   - If applicable: *`Are you sure you want to continue connecting? (yes/no)`* Type Yes
   - Enter password when prompted
 
