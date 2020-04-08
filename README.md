@@ -10,7 +10,7 @@ I will be using `log2.wynton.ucsf.edu` as the main access point for this noteboo
 
 e.g. the commands could be entered in the order of:
 
-```bash
+```zsh
 ssh USERNAME@log2.wynton.ucsf.edu
 ssh NODE_NAME
 ```
