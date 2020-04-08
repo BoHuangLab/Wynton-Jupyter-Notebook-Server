@@ -11,9 +11,9 @@ I will be using `log2.wynton.ucsf.edu` as the main access point for this noteboo
 e.g. the commands could be entered in the order of:
 
 1. `ssh USERNAME@log2.wynton.ucsf.edu`
-2. ENTER PASSWORD
+2. *ENTER PASSWORD*
 3. `ssh NODE_NAME`
-4. ENTER PASSWORD
+4. *ENTER PASSWORD*
 
 Node names and specs can be found [here] (https://wynton.ucsf.edu/hpc/about/specs.html). Nodes are selected based on hardware needs. General coding will benefit from the Xeon E5430 CPU found on "dev1", but using large datasets will probably require `dev2` or `dev3` which have larger "/scratch" designation. Deep learning (and other GPU-dependent tasks) should be done on `gpudev1`
 
@@ -66,8 +66,10 @@ Login with `ssh -t USERNAME@log2.wynton.ucsf.edu 'ssh USERNAME@NODE_NAME'`
 ### Update PIP
 
 In the development node, enter:
-`pip install --user --upgrade pip`
-`pip3 install --user --upgrade pip`
+```
+pip install --user --upgrade pip
+pip3 install --user --upgrade pip
+```
 
 ### Install your favorite packages
 UCSF has Python 2 and 3 installed, and *very little else.* You will need to install any package you intend on using via pip3 install --user PACKAGE NAME" You can copy and paste the snippit below for the essentials. I will be doing these installations on Python 3, but if you would like to use Python 2.x, simply use pip instead of pip3.
@@ -100,7 +102,8 @@ jupyter notebook --port=PORT
 
 Now just open your browser and type in `localhost:PORT` and you should be good to go.  
 
-[The first time you access it, you will be asked to generate a password to access the notebook.]("/Images/Jupyter First Launch.jpg")
+The first time you access it, you will be asked to generate a password to access the notebook.
+[Screenshot]("/Images/Jupyter First Launch.jpg")
 
 The key can be found in the terminal window, as seen below:
 
