@@ -98,7 +98,7 @@ First decide on a port number. In the AppleScript I've attached, it generates a 
 
 Now just open your browser and type in `localhost:PORT` and you should be good to go.  
 
-![The first time you access it, you will be asked to generate a password to access the notebook.](/Images/Jupyter First Launch.jpg?raw=true "Title")
+[The first time you access it, you will be asked to generate a password to access the notebook.](/Images/Jupyter First Launch.jpg?raw=true "Title")
 
 The key can be found in the terminal window, as seen below:
 
