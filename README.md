@@ -37,15 +37,14 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
 
 This allows us to access the login node without being prompted for a password. Access a node by entering `ssh NODE_NAME` after logging into the node. If you log in, skip to the "Setting up Jupyter Notebook Server" section. If you are prompted for a password, you will need to repeat the process, this time pairing the node machine to the dev.:
 
-1. `ssh USERNAME@log2.wynton.ucsf.edu`
-2. Enter `ssh-keygen -t rsa`
-3. *`Enter file in which to save the key`*
+1. __From Local Machine:__ Enter `ssh-keygen -t rsa`
+2. *`Enter file in which to save the key`*
   - Press "ENTER" (Leave Default)
-4. *`Enter passphrase`* 
+3. *`Enter passphrase`* 
   - Press `"ENTER"` (Leave Default)
-5. *`Enter passphrase again`* 
+4. *`Enter passphrase again`* 
   - Press `"ENTER"` (Leave Default)
-6. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@NODENAME`
+5. `ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@NODENAME`
   - Enter password when prompted
 
 Make sure the terminal window says `[USERNAME@log2.wynton.ucsf.edu]` during this set of steps. It is possible that you get logged out. Remember, we are creating that password pairing between your account's login node  and the development node.
