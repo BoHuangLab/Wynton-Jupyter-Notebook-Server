@@ -25,34 +25,34 @@ Storing a public-private ssh key pair will save a lot of headaches in the future
 
 1. Open ssh terminal 
 2. Enter `ssh-keygen -t rsa`
-2. `Enter file in which to save the key` 
+3. `Enter file in which to save the key` 
   - Press "ENTER" (Leave Default)
-3. `Enter passphrase` 
+4. `Enter passphrase` 
   - Press "ENTER" (Leave Default)
-4. `Enter passphrase again` 
+5. `Enter passphrase again` 
   - Press "ENTER" (Leave Default)
-5. `ssh USERNAME@log2.wynton.ucsf.edu mkdir -p .ssh`
+6. `ssh USERNAME@log2.wynton.ucsf.edu mkdir -p .ssh`
  -  Enter password when prompted
-6. `cat .ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu '>>cat .ssh/authorized_keys'`
+7. `cat .ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu '>>cat .ssh/authorized_keys'`
 - Enter password when prompted
-7. `ssh USERNAME@log2.wynton.ucsf.edu "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"`
+8. `ssh USERNAME@log2.wynton.ucsf.edu "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"`
   - Enter password when prompted
 
 This allows us to access the login node without being prompted for a password. __We will need to repead this process to access the development node in a similar fashion__ You should do this for every development node you intend to use frequently.
 
 1. `ssh USERNAME@log2.wynton.ucsf.edu`
 2. Enter `ssh-keygen -t rsa`
-2. *`Enter file in which to save the key`*
+3. *`Enter file in which to save the key`*
   - Press "ENTER" (Leave Default)
-3. *`Enter passphrase`* 
+4. *`Enter passphrase`* 
   - Press `"ENTER"` (Leave Default)
-4. *`Enter passphrase again`* 
+5. *`Enter passphrase again`* 
   - Press `"ENTER"` (Leave Default)
-5. `ssh USERNAME@log2.wynton.ucsf.edu mkdir -p .ssh`
+6. `ssh USERNAME@log2.wynton.ucsf.edu mkdir -p .ssh`
   - Enter password when prompted
-6. `cat .ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu '>>cat .ssh/authorized_keys'`
+7. `cat .ssh/id_rsa.pub | ssh USERNAME@log2.wynton.ucsf.edu '>>cat .ssh/authorized_keys'`
   - Enter password when prompted
-7. `ssh USERNAME@log2.wynton.ucsf.edu "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"`
+8. `ssh USERNAME@log2.wynton.ucsf.edu "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"`
   - Enter password when prompted
 
 Make sure the terminal window says `[USERNAME@log2.wynton.ucsf.edu]` during this set of steps. It is possible that you get logged out. Remember, we are creating that password pairing between your account's login node  and the development node.
