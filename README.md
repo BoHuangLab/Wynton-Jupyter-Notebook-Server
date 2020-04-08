@@ -75,11 +75,11 @@ Now we're at the meat and potatoes of this long endeavor. You will be installing
 
 In the development node, enter: `pip3 install --user jupyter`
 
-I have included a config file which you can use. You may configure your own if there are other options you'd like to set by following the instructions here. Download the file and enter this command to upload it to the right folder.
+I have included a config file which you can use. Download or clone this repo and enter this command to upload `jupyter_notebook_config`.
 
 __From local machine (Type `exit` in Terminal):__ `scp` *`CONFIG_FILE_LOCATION`* `USERNAME@log2.wynton.ucsf.edu:"~/.jupyter"`
 
-Fulll instructions to set up a jupyter notebook server can be found [here](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html).
+Fulll instructions to set up a jupyter notebook server can be found [here](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html). You may configure your own config file if there are other options you'd like to set.
 
 ## Accessing the notebook server
 
